@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*{
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color: #BFBFBF;
+    padding: 20px 0;
+}
+
+body h1{
+    font-size: 2.5rem;
+    margin: 20px 0 40px;
+}
+
+#video{
+    cursor: pointer;
+    width: 50%;
+    background-color: #000000 !important;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; */
+
+}
+
+.controls{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+    color: #ffffff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 50%;
+    /* z-index: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.controls .btn{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.controls .fa-play{
+    color: #e4e3e3;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.controls .fa-stop{
+    color: #e4e3e3;
+}
+
+.controls .fa-pause{
+    color: #e4e3e3;
+}
+
+.timeStamp{
+    margin-left: 10px;
+}
+
+@media(max-width: 800px){
+    #video, .controls{
+        width: 90%;
+    }
+}
