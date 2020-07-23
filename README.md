@@ -2,4 +2,4 @@
 
 Custom video player bar using css & javascript
 
-<img src="demo.gif" width="70%" height="70%">
+<img src="demo.gif" width="50%" height="50%">
